@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Cart</title>
+  <style>
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #f5f5f7;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      font-size: 28px;
+      color: #1d1d1f;
+    }
+
+    .product {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+      border: 1px solid rgb(204, 204, 204);
+      border-radius: 12px;
+      padding: 16px;
+      background: white;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    .product img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .product-info {
+      flex: 1;
+    }
+
+    .btn {
+      padding: 6px 12px;
+      border: none;
+      border-radius: 5px;
+      margin-right: 10px;
+      color: white;
+      cursor: pointer;
+    }
+
+    .buy-btn {
+      background: #0071e3;
+    }
+
+    .remove-btn {
+      background: #9fe5ee;
+    }
+    .remove-btn:hover{
+      background:#0872d4 ;
+    }
+
+    #cart-items {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      max-width: 700px;
+      margin: auto;
+    }
+
+    #buy-form {
+      display: none;
+      padding: 20px;
+      background: white;
+      border-radius: 12px;
+      margin: 30px auto 0;
+      max-width: 400px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    }
+
+    #buy-form input,
+    #buy-form textarea {
+      width: 100%;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+    }
+
+    #place-order-btn {
+      background: #0071e3;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 8px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+
+    .total {
+      margin-top: 20px;
+      font-size: 18px;
+      font-weight: bold;
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Your Cart</h2>
+  <div id="cart-items"></div>
+
+  <!-- Buy Form -->
+  <div id="buy-form">
+    <h3>Checkout</h3>
+    <input type="text" id="buyer-name" placeholder="Full Name" />
+    <input type="email" id="buyer-email" placeholder="Email" />
+    <input type="tel" id="buyer-phone" placeholder="Phone Number" />
+    <textarea id="buyer-address" placeholder="Shipping Address"></textarea>
+    <button id="place-order-btn">Place Order</button>
+  </div>
+
+  <script>
+    let items = JSON.parse(localStorage.getItem("cart")) || [];
+    const list = document.getElementById("cart-items");
+    const form = document.getElementById("buy-form");
+
+    let selectedIndex = null;
+
+    function updateCartDisplay() {
+      list.innerHTML = '';
+      let total = 0;
+
+      items.forEach((item, index) => {
+        total += item.price;
+
+        const div = document.createElement("div");
+        div.className = "product";
+        div.innerHTML = `
+          <img src="${item.image}" alt="${item.name}">
+          <div class="product-info">
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+            <p><strong>$${item.price}</strong></p>
+            <button class="btn buy-btn" onclick="buyNow(${index})">Buy Now</button>
+            <button class="btn remove-btn" onclick="removeItem(${index})">Remove</button>
+          </div>
+        `;
+        list.appendChild(div);
+      });
+
+      const totalDiv = document.createElement("div");
+      totalDiv.className = "total";
+      totalDiv.textContent = `Total: $${total}`;
+      list.appendChild(totalDiv);
+    }
+
+    function removeItem(index) {
+      items.splice(index, 1);
+      localStorage.setItem("cart", JSON.stringify(items));
+      updateCartDisplay();
+    }
+
+    function buyNow(index) {
+      selectedIndex = index;
+      form.style.display = "block";
+      window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+    }
+
+    document.getElementById("place-order-btn").onclick = function () {
+      const name = document.getElementById("buyer-name").value.trim();
+      const email = document.getElementById("buyer-email").value.trim();
+      const phone = document.getElementById("buyer-phone").value.trim();
+      const address = document.getElementById("buyer-address").value.trim();
+
+      if (!name || !email || !phone || !address) {
+        alert("Please fill all details.");
+        return;
+      }
+
+      const product = items[selectedIndex];
+      alert(`Order placed for ${product.name}! Thank you, ${name}.`);
+
+      items.splice(selectedIndex, 1);
+      localStorage.setItem("cart", JSON.stringify(items));
+      updateCartDisplay();
+
+    
+      form.style.display = "none";
+      selectedIndex = null;
+      document.getElementById("buyer-name").value = "";
+      document.getElementById("buyer-email").value = "";
+      document.getElementById("buyer-phone").value = "";
+      document.getElementById("buyer-address").value = "";
+    }
+
+    updateCartDisplay();
+  </script>
+
+</body>
+</html>

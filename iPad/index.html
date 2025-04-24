@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPad</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body >
+    <div class="nav-bar">
+        <nav>
+            <p><a href="../index.html" class="logo"><i class="fa-brands fa-apple"></i></a></p>
+            <p><a href="../Mac/index.html" class="mac">Mac</a></p>
+            <p><a href="../iPhone/index.html" class="iphone">iPhone</a></p>
+            <p><a href="./index.html" class="ipad">iPad</a></p>
+            <p><a href="../Airpods/index.html" class="airpods">AirPods</a></p>
+            <p><a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+            <p><a href="../cart.html" class="cart" id="cart"><i class="fa-solid fa-bag-shopping"></i>(<span id="cart-count">0</span>)</a></p>
+        </nav>
+    </div>
+
+    <div class="video">
+        <div>
+            <center><video src="https://www.apple.com/assets-www/en_WW/ipad/welcome/04854789d_large.mp4" autoplay placeinline  loop preload="none" role="img" muted ></video></center>
+        </div>
+    </div>
+            <p class="store-text">Products</p>
+    <div>    
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../iPad/assets/ipad_pro.png" class="card-img-top" alt="Mac Studio" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    
+                    <h5 class="card-title">iPad Pro</h5>
+                    
+                    <p class="card-text">The ultimate iPad experience with the most advanced technology.</p>
+                    <p class="fw-semibold">From <strong>$999</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "iPad Pro",
+                        price: 999,
+                        image: "../iPad/assets/ipad_pro.png",
+                        description: "The ultimate iPad experience with the most advanced technology."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../iPad/assets/ipad_air_.png" class="card-img-top" alt="MacBook Air" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">iPad Air</h5>
+                    
+                    <p class="card-text">Serious performance in a thin and light design.</p>
+                    <p class="fw-semibold">From <strong>$599</strong> or <strong>$49.25/mo.</strong> for 12 mo.</p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "iPad Air",
+                        price: 599,
+                        image: "../iPad/assets/ipad_air_.png",
+                        description: "Serious performance in a thin and light design."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../iPad/assets/ipad_.png" class="card-img-top" alt="MacBook Pro" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">iPad</h5>
+                    
+                    <p class="card-text">The colorful, all-screen iPad for the things you do every day.</p>
+                    <p class="fw-semibold">From <strong>$349</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "iPad",
+                        price: 349,
+                        image: "../iPad/assets/ipad_.png",
+                        description: "The colorful, all-screen iPad for the things you do every day.."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../iPad/assets/ipad_mini_.png" class="card-img-top" alt="Apple Display" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    
+                    <h5 class="card-title">iPad Mini</h5>
+                    
+                    <p class="card-text">The full iPad experience in an ultraportable design.</p>
+                    <p class="fw-semibold">From <strong>$499</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "iPad Mini",
+                        price: 499,
+                        image: "../iPad/assets/ipad_mini_.png",
+                        description: "The full iPad experience in an ultraportable design.."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                     <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+          
+              
+
+            
+            
+
+    </div>
+
+
+    <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Business</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Education</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For HealthCare</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2025 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    
+    <script src="https://kit.fontawesome.com/760b0373fd.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script> 
+    <script src="../cart.js"></script>
+</body>
+</html>

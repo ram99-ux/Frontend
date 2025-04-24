@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirPods</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body >
+    <div class="nav-bar">
+        <nav>
+            <p><a href="../index.html" class="logo"><i class="fa-brands fa-apple"></i></a></p>
+            <p><a href="../Mac/index.html" class="mac">Mac</a></p>
+            <p><a href="../iPhone/index.html" class="iphone">iPhone</a></p>
+            <p><a href="../iPad/index.html" class="ipad">iPad</a></p>
+            <p><a href="./index.html" class="airpods">AirPods</a></p>
+            <p><a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+            <p><a href="../cart.html" class="cart" id="cart"><i class="fa-solid fa-bag-shopping"></i>(<span id="cart-count">0</span>)</a></p>
+        </nav>
+    </div>
+
+    <div class="video">
+        <div class="text">
+            <p class="text1">AirPods Max</p>
+        </div>
+        <div class="image">
+            <center><img class="img" src="./assets/airpods_max_.png" alt=""></center>
+        </div>
+    </div>
+            <p class="store-text">Products</p>
+    <div>    
+        <div class="container py-5">
+            <div class="row text-center justify-content-center">
+          
+              
+              <div class="col-md-3 airpods-card">
+                <img src="../Airpods/assets/airpods-4-.jpeg" alt="AirPods 4">
+                <h5 class="fw-bold">AirPods 4</h5>
+                <p>The next evolution of sound and comfort.</p>
+                <p><strong>$129</strong></p>
+                <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                <br>
+                <button onclick='addToCart({
+                  name: "AirPods 4",
+                  price: 129,
+                  image: "../Airpods/assets/airpods-4-.jpeg",
+                  description: "The next evolution of sound and comfort."
+                })' class="btn btn-primary px-4 rounded-pill ">Add to Cart</button>
+              </div>
+          
+              
+              <div class="col-md-3 airpods-card">
+                <img src="../Airpods/assets/2.jpg" alt="AirPods 4 ANC">
+                <h5 class="fw-bold">AirPods 4<br><span class="fw-normal text-muted" style="font-size: 0.9rem;">Active Noise Cancellation</span></h5>
+                <p>The next evolution of sound, comfort, and noise control.</p>
+                <p><strong>$179</strong></p>
+                <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                <br>
+                <button onclick='addToCart({
+                  name: "AirPods 4",
+                  price: 179,
+                  image: "../Airpods/assets/2.jpg",
+                  description: "The next evolution of sound, comfort, and noise control."
+                })' class="btn btn-primary px-4 rounded-pill ">Add to Cart</button>
+
+                
+              </div>
+          
+              
+              <div class="col-md-3 airpods-card">
+                <img src="../Airpods/assets/AirPods_Pro_2_.webp" alt="AirPods Pro 2">
+                <h5 class="fw-bold">AirPods Pro 2</h5>
+                <p>Pro-level Active Noise Cancellation and a breakthrough in hearing health.</p>
+                <p><strong>$249</strong></p>
+                <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                <br>
+                <button onclick='addToCart({
+                  name: "AirPods Pro 2",
+                  price: 249,
+                  image: "../Airpods/assets/AirPods_Pro_2_.webp",
+                  description: "Pro-level Active Noise Cancellation and a breakthrough in hearing health."
+                })' class="btn btn-primary px-4 rounded-pill ">Add to Cart</button>
+              </div>
+          
+              
+              <div class="col-md-3 airpods-card" style="border-right: none;">
+                <img src="../Airpods/assets/airpods-max-last.jpeg" alt="AirPods Max">
+                <h5 class="fw-bold">AirPods Max</h5>
+                <p>The ultimate over-ear listening experience.</p>
+                <p><strong>$549</strong></p>
+                <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                <br>
+                <button onclick='addToCart({
+                  name: "AirPods Max",
+                  price: 549,
+                  image: "../Airpods/assets/airpods-max-last.jpeg",
+                  description: "The ultimate over-ear listening experience.."
+                })' class="btn btn-primary px-4 rounded-pill ">Add to Cart</button>
+              </div>
+          
+            </div>
+          </div>
+
+    <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Business</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Education</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For HealthCare</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2025 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    
+    <script src="https://kit.fontawesome.com/760b0373fd.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="../cart.js"></script> 
+</body>
+</html>

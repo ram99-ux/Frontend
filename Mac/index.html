@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mac</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body >
+    <div class="nav-bar">
+        <nav>
+            <p><a href="../index.html" class="logo"><i class="fa-brands fa-apple"></i></a></p>
+            <p><a href="./index.html" class="mac">Mac</a></p>
+            <p><a href="../iPhone/index.html" class="iphone">iPhone</a></p>
+            <p><a href="../iPad/index.html" class="ipad">iPad</a></p>
+            <p><a href="../Airpods/index.html" class="airpods">AirPods</a></p>
+            <p><a href="" class="search"><i class="fa-solid fa-magnifying-glass"></i></a></p>
+            <p><a href="../cart.html" class="cart" id="cart"><i class="fa-solid fa-bag-shopping"></i>(<span id="cart-count">0</span>)</a></p>
+        </nav>
+    </div>
+
+    <div class="video">
+        <div>
+            <center><video src="https://www.apple.com/105/media/us/mac/family/2025/59856fc1-d007-421a-90ee-734ddf3fd25d/anim/welcome/large.mp4#t=3.226083" autoplay placeinline data-inline-media loop preload="none" role="img" muted ></video></center>
+        </div>
+    </div>
+            <p class="store-text">Products</p>
+    <div>    
+        <div class="container my-5">
+            <div class="row row-cols-1 row-cols-md-3 g-4 justify-content-center">
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/Mac studio.png" class="card-img-top" alt="Mac Studio" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">Mac Studio</h5>
+                    <h6 class="text-muted mb-2">M2 Ultra chip</h6>
+                    <p class="card-text">Powerful performance in a compact pro desktop design.</p>
+                    <p class="fw-semibold">From <strong>$1,999</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "Mac Studio",
+                        price: 1999,
+                        image: "../Mac/assets/Mac studio.png",
+                        description: "Powerful performance in a compact pro desktop design..."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/Mac1.png" class="card-img-top" alt="MacBook Air" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">MacBook Air 13” and 15”</h5>
+                    <h6 class="text-muted mb-2">M4 chip</h6>
+                    <p class="card-text">Strikingly thin and fast so you can work, play, or create anywhere.</p>
+                    <p class="fw-semibold">From <strong>$999</strong> or <strong>$83.25/mo.</strong> for 12 mo.</p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "MacBook Air 13” and 15”",
+                        price: 999,
+                        image: "../Mac/assets/Mac1.png",
+                        description: "Strikingly thin and fast so you can work, play, or create anywhere..."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/mac2.png" class="card-img-top" alt="MacBook Pro" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">MacBook Pro</h5>
+                    <h6 class="text-muted mb-2">M3 Pro chip</h6>
+                    <p class="card-text">Built for power users and pros with intensive workflows.</p>
+                    <p class="fw-semibold">From <strong>$1,599</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                     <button onclick='addToCart({
+                        name: "MacBook Pro",
+                        price: 1599,
+                        image: "../Mac/assets/mac2.png",
+                        description: "Built for power users and pros with intensive workflows..."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/display.png" class="card-img-top" alt="Apple Display" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">Studio Display</h5>
+                    <h6 class="text-muted mb-2">5K Retina</h6>
+                    <p class="card-text">A stunning 5K Retina display for creative professionals.</p>
+                    <p class="fw-semibold">From <strong>$1,599</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "Studio Display",
+                        price: 1599,
+                        image: "../Mac/assets/display.png",
+                        description: "A stunning 5K Retina display for creative professionals..."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/iMav.png" class="card-img-top" alt="iMac" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">iMac 24"</h5>
+                    <h6 class="text-muted mb-2">M3 chip</h6>
+                    <p class="card-text">All-in-one desktop with brilliant display and performance.</p>
+                    <p class="fw-semibold">From <strong>$1,299</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "iMac 24",
+                        price: 1299,
+                        image: "../Mac/assets/iMav.png",
+                        description: "All-in-one desktop with brilliant display and performance...."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              
+              <div class="col d-flex justify-content-center">
+                <div class="card h-100 border-0 text-center d-flex flex-column" style="max-width: 22rem;">
+                  <img src="../Mac/assets/Mac mini.png" class="card-img-top" alt="Mac Mini" style="height: 200px; object-fit: contain;">
+                  <div class="card-body flex-grow-1 d-flex flex-column">
+                    <p class="text-danger fw-bold mb-1">New</p>
+                    <h5 class="card-title">Mac Mini</h5>
+                    <h6 class="text-muted mb-2">M2 chip</h6>
+                    <p class="card-text">Compact and powerful desktop at an affordable price.</p>
+                    <p class="fw-semibold">From <strong>$599</strong></p>
+                    <div class="mt-auto d-flex justify-content-center gap-3">
+                      <button onclick='addToCart({
+                        name: "Mac Mini",
+                        price: 599,
+                        image: "../Mac/assets/Mac mini.png",
+                        description: "Compact and powerful desktop at an affordable price..."
+                      })' class="btn btn-primary px-4 rounded-pill">Add to Cart</button>
+                      <button class="btn btn-blue mb-2"><a href="../Buy.html" style="text-decoration: none;">Buy</a></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+            </div>
+          </div>
+          
+              
+
+            
+            
+
+    </div>
+
+
+    <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Business</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For Education</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-6 col-md-2 mb-3">
+            <h5>For HealthCare</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Home</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Features</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">Pricing</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+              <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-body-secondary">About</a></li>
+            </ul>
+          </div>
+    
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control" placeholder="Email address">
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+    
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© 2025 Company, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"></use></svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true"><use xlink:href="#facebook"></use></svg></a></li>
+          </ul>
+        </div>
+      </footer>
+    
+    <script src="https://kit.fontawesome.com/760b0373fd.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script> 
+    <script src="../cart.js"></script>
+</body>
+</html>
